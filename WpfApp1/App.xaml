@@ -1,0 +1,17 @@
+﻿<Application x:Class="WpfApp1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp1"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             Startup="Application_Startup">
+    <!--StartupUri="MainWindow.xaml"-->
+             <!-- StartupUri just pulls data from MainWindow.xml to initialize.
+    We can also define our custom startup process in App.xaml.cs -->
+    <Application.Resources>
+         <!-- Resources defined here are accessible in all windows. -->
+
+        <sys:String x:Key="AppResource">
+            App-level String resource
+            </sys:String>
+    </Application.Resources>
+</Application>
